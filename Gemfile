@@ -56,6 +56,7 @@ gem 'figaro'
 # version
 
 # misc
+gem 'doorkeeper'
 
 group :development, :test do
   gem 'byebug'
