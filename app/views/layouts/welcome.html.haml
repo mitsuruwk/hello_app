@@ -1,0 +1,6 @@
+!!!
+%html
+  = render 'head'
+  %body
+    = render 'nav'
+    = content_for?(:content) ? yield(:content) : yield

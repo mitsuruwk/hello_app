@@ -1,0 +1,7 @@
+- if obj.errors.any?
+  .error_explanation
+    .alert.alert-danger
+      フォームの入力内容に#{obj.errors.count}個のエラーがあります。
+      %ul
+        - obj.errors.full_messages.each do |msg|
+          %li= msg

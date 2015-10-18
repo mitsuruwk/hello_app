@@ -1,0 +1,10 @@
+.jumbotron
+  .container
+    .row
+      .col-xs-8
+        %h1 Hello, world!
+        %p
+          本サイトは、Rails学習用に作成中のデモサイトです。
+      .col-xs-4
+        - unless user_signed_in?
+          = render 'form'
